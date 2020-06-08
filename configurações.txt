@@ -1,0 +1,186 @@
+// Beautify
+// Dracula Oficial - theme
+// ESLint
+// JavaScript Snippet Pack
+// matreial icon theme
+// Rainbow brackets
+//live server 
+//color Highlight
+//dotenv
+//editorConfig
+// vscode-styled-components
+// rocketseat
+
+// Debugger for Chrome para startar pressionar F5
+
+no vsCode ir nas configurações[Ctrl + shift + P e deigitra Preferences: open Settings(JSON)] e colocar as  seguintes linhas
+	
+	autoComplete elemetos html dentro dos arquivos tsx, ts, js
+    "emmet.syntaxProfiles": {"javasctipt": "jsx"},
+    "emmet.includeLanguages": {"javascript": "javascriptreact"}
+
+
+Criar um arquivo .editorconfig e colocar o seguinte json dentro
+  {
+
+    indent_style: 'space',
+    indent_size: 2,
+    end_of_line: 'lf',
+    charset: 'utf-8',
+    trim_trailing_whitespace: true,
+    insert_final_newline: true,
+    tab_width: 2
+  };
+
+// ctrl + shift + p
+// ctrl + p
+// ctrl + shift + l - substitui o valor selecionado em todo o codigo
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Configurando o ambiente
+instalar nodeJs e npm
+
+para iniciar um projeto node, entrar na pasta onde quer criar o projeto e pelo prompt rodar o comando
+npm init -y
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+instalar yarn
+
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+
+
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+sudo apt update && sudo apt install yarn
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+dentro da pasta do projeto exercutar o comando  > yarn init
+
+instalar o babel pelo terminal usando os comandos 
+  yarn add @babel/cli
+  yarn add @babel/preset-env
+  yarn add @babe/core
+  yarn add @babel/plugin-proposal-object-rest-spread
+
+adicionar pasta node_modules no .gitignore
+
+criar arquivo .babelrc e colocar nele as dependencias
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry"
+      }
+    ]
+  ],
+  "plugins":["@babel/plugin-proposal-object-rest-spread"]
+}
+
+no arquivo packge.json adiconar um script no final
+
+  "scripts":{
+    "dev": "babel ./main.js -o ./bundle.js -w"
+  }
+
+no arquivo index.html ao invez de colocar o arquivo main.js colocar o bundle.js
+
+depois de configurado startar o babel com rodando o comando 'yarn dev' pelo terminal dentro da pasta do projeto.
+'yarn dev' refere-se ao script adicionado no arquivo 'package.json'
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+Configurando WEBPACH
+// OBS -D na frente do comando adiciona a dependencia na tag devDependencies ao inves de adicionar na tag dependecies
+yarn add webpack webpack-cli -D
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+criar arquivo webpack.config.js inicialmente pode ser configurado assim
+
+module.exports = {
+    entry: ['@babel/polyfill', './src/main.js'],
+    output: {
+        path: __dirname + '/public',
+        filename: 'bundle.js'
+    },
+    devServer: {
+        contentBase: __dirname + '/public',
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /nome_modules/,
+                use: {
+                    loader: 'babel-loader'
+                }
+            }
+        ]
+    }
+}
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+yarn add babel-loader -D
+
+yarn add webpack-dev-server -D
+
+yarn add @babel/plugin-transform-async-to-generator -D
+
+yarn add @babel/polyfill -D
+
+alterar o script do package.json para
+
+"dev": "webpack-dev-server --mode-development"
+
+colocar no .babelrc nos plugins
+"@babel/plugin-transform-async-to-generator"
+
+yarn add axios
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+modulos para TypeScript
+
+npm i typescript -D
+
+dentro da pasta do projeto abri o terminal e rodar o comando abaixo
+npx tsc --init
+
+para subir o servidor usar um dos comandos
+se o ts-node-dev estiver instalado 
+	npx ts-node-dev src/server.ts
+se não estiver
+	npx ts-node src/server.ts
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+express
+
+npm i express
+
+caso esteja usando typeScript sera necessario o seguinte modulo também
+Modulo para trabalhar com rotas
+npm i @types/express -D
+
+
+dependencia necessaria para o node conseguir executar os scrips em typescript
+após instalada, para executar comando deve se usar npx e não npm ex: npx ts-node src/server.ts
+
+Comando abaixo serve para instalar a dependencia que sobre o servidor, mas sem hot reload
+	npm install ts-node -D  para utilizar npx ts-node src/server.ts
+
+Comando abaixo serve para instalar a dependencia que sobre o servidor, com hot reload
+	npm i ts-node-dev -D para utilizar npx ts-node-dev src/server.ts
+
+	para ficar mais pratico, pode ser colocado no package.json nos scripts, um script para rodar o comando assima
+  "scripts": {
+    "dev": "ts-node-dev src/server.ts"
+  },	
+
+  para rodar é só utilizar o comando npm run dev
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+criar projeto react com typeScript, os dois passos acima devem estar configurados
+
+npx create-react-app web --template=typescript
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
