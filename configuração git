@@ -78,7 +78,7 @@ git commit -m "comentario"
 git push -u origin master
 
 -----------------------------------------------------------------------------------------------------------------------------------
-Adicionando Alterações em um repositorio depois de ja ter começado o projeto
+Adicionando Alterações em um repositorio depois de ja ter começado o projeto e ainda não ter clonado o projeto
 
 executar o comando na pasta onde esta os fontes
 git init
@@ -88,18 +88,6 @@ git remote add origin git@github.com:jrosetim/cursojs.git
 git add .
 git commit -m "comentario"
 git push -u origin master
------------------------------------------------------------------------------------------------------------------------------------
-Caso o repossitorio ja esteja criado
-
-Trocar finanCa.git pelo nome do repositório
-git remote add origin git@github.com:jrosetim/finanCa.git
-
-git add .
-
-git commit -m "comentário do commit"
-
-git push -u origin master.
-
 -----------------------------------------------------------------------------------------------------------------------------------
 Alterar endereço remoto do repositório
 
