@@ -184,3 +184,16 @@ criar projeto react com typeScript, os dois passos acima devem estar configurado
 npx create-react-app web --template=typescript
 
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+.env backend
+
+instalar o dotenv
+
+npm install --save-dev dotenv
+
+nas classes onde for usar colocar o require
+  require('dotenv/config');
+para usar é só fazer a seguinte chamada
+  process.env.URL_API
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-  

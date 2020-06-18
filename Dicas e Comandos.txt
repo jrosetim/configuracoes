@@ -17,6 +17,37 @@ ex:
 docker start mongodb
 
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+no windows usar ou o cmd ou powersheel
+
+docker run --name postgresdb -e POSTGRES_PASSWORD=postgres -p 5433:5433 -d postgres
+ 
+ 
+docker pull postgres:9.6
+ 
+docker network create --driver bridge postgres-network
+ 
+docker run -p 5432:5432 --name postgres96 -v "D:\Banco Dados\dockerData\postgres96":/var/lib/postgresl/data -e POSTGRES_PASSWORD=postgres -d postgres:9.6
+ 
+docker start postgres96 > ja pode ser acessado pelo gerenciador de db
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+Remoção
+
+remover container 
+docker ps -a > listara todos os conteiners para pegar o id e utilizar abaixo
+docker container rm id_container
+docker rm -v <container_name>
+
+remover imagens
+docker image > listara as images do seu pc para pegar o id e utilizar abaixo
+docker image rmi id_image > id ma imagem que quer remover
+
+remover volumes
+docker volume ls > listara os volumes do seu pc para pegar o id e utilizar abaixo
+docker volume rm <volume_name>
+ 
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 Linux
 
