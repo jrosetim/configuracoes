@@ -69,17 +69,26 @@ Hi username! You've successfully authenticated, but GitHub does not provide shel
 criar um repositorio fazio no git.
 copiar o nome ex: git@github.com:jrosetim/cursojs.git
 
-Adicionando uma origin
+ir na pasta onde vai criar o projeto e executar o comando
+git clone git@github.com:jrosetim/cursojs.git
+
+depois de fazer as alterações
+git add .
+git commit -m "comentario"
+git push -u origin master
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Adicionando Alterações em um repositorio depois de ja ter começado o projeto e ainda não ter clonado o projeto
+
+executar o comando na pasta onde esta os fontes
+git init
 
 git remote add origin git@github.com:jrosetim/cursojs.git
-
-caso tenha algo errado e queira alterar o endereço remoto
-
-git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
-
-depois disso é o caminho feliz
 
 git add .
 git commit -m "comentario"
 git push -u origin master
 -----------------------------------------------------------------------------------------------------------------------------------
+Alterar endereço remoto do repositório
+
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
