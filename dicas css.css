@@ -1,0 +1,12 @@
+.container{
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* criado 4 colunas em partes iguais */
+  grid-template-rows: 20vh 70vh 10vh; /* criado 3 linhas com os devidos tamanhos */
+  grid-gap: 20px; /*espaço entre as linhas e colunas para fazer os tamanhos ficarem diferentes usar grid-row-gap e grid-column-gap*/
+}
+
+header{
+  grid-column-start: 1;
+  height: 100px;
+  grid-column-end: 3; /*mesmo criando duas colunas, existem 3 linhas por isso termina na linha 3*/
+}

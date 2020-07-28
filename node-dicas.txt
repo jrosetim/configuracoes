@@ -1,0 +1,89 @@
+npm init -y dentro da pasta do projeto para iniciar o projeto. ira criar a estrutura de pasta node_module e o package.json
+
+-----------------------------------------------------------------------------
+express => utilizado para fazer as requisiçoes e obeter as resposta / rest
+criar aquivo server.js
+
+cont express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('teste');
+})
+app.listen(3001);
+
+-----------------------------------------------------------------------------
+nodemon => hotreload server, instalar como dev dependencie
+
+criar um no script dentro de package.json ex:
+ "dev": "nodemon server.js"
+rodar no terminal
+ 
+ npm run dev 
+ ou
+ yarn run dev
+----------------------------------------------------------------------------- 
+MongoDB com docker
+
+com o docker instalado
+
+executar no terminal
+
+docker pull mongo
+docker run --name mongodb -p 27017:27017 -d mongo
+
+docker ps
+
+robo3t gerenciador de bd mongo
+
+npm instal mongoose => para conectar no banco de dados mongodb
+
+----------------------------------------------------------------------------- 
+postgres
+
+npm install pg
+
+const pg = require('pg');
+
+const conection = new pg.Client({
+  user : 'postgres',
+  host: 'localhost',
+  database: 'financa',
+  password: 'postgres',
+  port: 5432
+})
+
+module.exports = conection 
+
+-----------------------------------------------------------------------------
+Rotas
+
+criar arquivo routes.js
+
+const express = require('express');
+const routes = express.Router();
+
+routes.get('/', (req, res) => {
+  res.send('teste');
+})
+
+module.exports = routes;
+
+no arquivo server.js retirar as rotas, caso tenha e colocar o seguinte
+
+app.use('/api', require('./src/routes'));
+
+ 
+----------------------------------------------------------------------------- 
+CORS
+
+npm install cors
+
+no arquivo server.js importar o cors
+const cors = required('cors');
+
+app.use(cors());
+
+
+----------------------------------------------------------------------------- 
