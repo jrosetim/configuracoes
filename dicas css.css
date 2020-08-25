@@ -10,3 +10,34 @@ header{
   height: 100px;
   grid-column-end: 3; /*mesmo criando duas colunas, existem 3 linhas por isso termina na linha 3*/
 }
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Seletores
+
+* -> seletor universal exmplo
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: borde-box; isso faz com que seja respeitada as bordas dos elementos, ex: 
+                         uma div de 400px quando utilizar um padding dentro dela, não será aumentado o tamanho
+}
+
+alinhar ao centro: margin 0px auto;
+
+overflow: serve para quando o conteudo ultrapassa tamanho do elemento ex:
+uma div tem tamanho fixo de 50px de altura e um texto é buscado do banco de dados e é maior que esse tamnho de 50px
+as opções do overflows servem para manipular esse tipo de ocasição 
+
+opacity: serve para adicionar transparencia aos elementos, valores de 0 a 1 onde 0 é 100% transparente e 1 é 100% visivel
+
+border radious: serve para arredondar os elementos, valores de 0 a 50, onde 50% deixa redondo.
+
+Position: Para um elemento filho se posicionar dentro de uma div pai, a div pai tem que esta como position:relative, e div filho deve estar como position: absolute
+ position fixed, faz com que o elemento fique na mesma posição sempre, mesmo que tenha um scroll por ex, sempre ficara no topo da tela, sempre se posiciona em relação
+ ao navegador e não ao elemento pai
+ 
+transiction: serve para suavizar a transição, ex: um elemento com :hover com transiction fica mais suave a ação quando colocar o mouse por cima do elemento
+
+ 
