@@ -1,0 +1,76 @@
+JavaScript Snippet Pack
+
+color Highlight
+
+Dracula Official
+
+EditorConfig for VS Code
+
+Debugger for Chrome
+
+Create React JS and React Native Component
+
+Bracket Pair Colorizer 2
+
+Bookmarks
+
+Beautify
+
+ESLint
+
+TSLint
+
+Babel ES6/ES7
+
+DotENV
+
+Auto Rename Tag
+
+Auto Complete Tag
+
+Auto Close Tag
+
+Angular 10 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout
+
+vscode-styled-components
+
+Visual Studio IntelliCode
+
+Rocketseat ReactJS
+
+Rocketseat React Native
+
+React-Native/React/Redux snippets for es6/es7
+
+React Native Tools
+
+React and React Native Development Extensions Pack
+
+Rainbow Brackets
+
+Material Icon Theme
+
+// Debugger for Chrome para startar pressionar F5
+
+no vsCode ir nas configurações[Ctrl + shift + P e deigitra Preferences: open Settings(JSON)] e colocar as  seguintes linhas
+	
+	autoComplete elemetos html dentro dos arquivos tsx, ts, js
+    "emmet.syntaxProfiles": {"javasctipt": "jsx"},
+    "emmet.includeLanguages": {"javascript": "javascriptreact"}
+
+
+Criar um arquivo .editorconfig e colocar o seguinte json dentro
+  {
+
+    indent_style: 'space',
+    indent_size: 2,
+    end_of_line: 'lf',
+    charset: 'utf-8',
+    trim_trailing_whitespace: true,
+    insert_final_newline: true,
+    tab_width: 2
+  };
+
+// ctrl + shift + p
+// ctrl + p
+// ctrl + shift + l - substitui o valor selecionado em todo o codigo

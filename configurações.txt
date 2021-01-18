@@ -1,40 +1,4 @@
-// Beautify
-// Dracula Oficial - theme
-// ESLint
-// JavaScript Snippet Pack
-// matreial icon theme
-// Rainbow brackets
-//live server 
-//color Highlight
-//dotenv
-//editorConfig
-// vscode-styled-components
-// rocketseat
 
-// Debugger for Chrome para startar pressionar F5
-
-no vsCode ir nas configurações[Ctrl + shift + P e deigitra Preferences: open Settings(JSON)] e colocar as  seguintes linhas
-	
-	autoComplete elemetos html dentro dos arquivos tsx, ts, js
-    "emmet.syntaxProfiles": {"javasctipt": "jsx"},
-    "emmet.includeLanguages": {"javascript": "javascriptreact"}
-
-
-Criar um arquivo .editorconfig e colocar o seguinte json dentro
-  {
-
-    indent_style: 'space',
-    indent_size: 2,
-    end_of_line: 'lf',
-    charset: 'utf-8',
-    trim_trailing_whitespace: true,
-    insert_final_newline: true,
-    tab_width: 2
-  };
-
-// ctrl + shift + p
-// ctrl + p
-// ctrl + shift + l - substitui o valor selecionado em todo o codigo
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 // Configurando o ambiente
