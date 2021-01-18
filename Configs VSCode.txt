@@ -52,8 +52,9 @@ Criar um arquivo .editorconfig e colocar o seguinte json dentro
 --------------------------------------------------------------------------------------------------------------------------
 COMANDOS
 
- ctrl + shift + p
- ctrl + p
- ctrl + shift + l - substitui o valor selecionado em todo o codigo
+extensão bookmark
+ctrl + alt + k -> marca a linha com um bookmark
+ctrl + alt + l -> vai para o proximo bookmark marcado
+ctrl + alt + j -> vai para o bookmark anterior
 
 -------------------------------------------------------------------------------------------------------------------------- 
