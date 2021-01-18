@@ -1,0 +1,24 @@
+### Flameshot
+
+sudo apt install flameshot
+
+Criando atalho personalizado
+
+- Vá para as configurações do sistema e navegue até as configurações do teclado.
+- Você encontrará todos os atalhos de teclado listados lá, ignore-os e role até o final. Agora você encontrará um **botão +** .
+- Clique no botão “+” para adicionar um atalho personalizado. Você precisa digitar o seguinte nos campos que você recebe:**Nome:**  *Qualquer coisa que você quiser* **Comando:** /usr/bin/flameshot gui
+- Finalmente, defina o atalho para **PrtSc** – que irá avisá-lo que a funcionalidade de captura de tela padrão será desativada.
+
+----------------------------------------------------------------------------------------------------------------------------
+### copyQ 
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+rm comando para deletar arquivo, não consegue deletar uma pasta ex
+rm home/jrosetim/Documentos/projetos/package.json
+
+rmdir comando para deletar um diretorio Ex:
+rm home/jrosetim/Documentos/projetos
+
+----------------------------------------------------------------------------------------------------------------------------

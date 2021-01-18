@@ -1,0 +1,11 @@
+[https://www.youtube.com/watch?v=V8z97sWDKNs&list=PL8iIphQOyG-DSLV6qWs8wh37o0R_F9Q_Q&index=4](https://www.youtube.com/watch?v=V8z97sWDKNs&list=PL8iIphQOyG-DSLV6qWs8wh37o0R_F9Q_Q&index=4)
+
+Criar novo componente 
+
+ng g c caminho/caminho
+
+ng g c src/home  será criado o componente home dentro da pasta src
+
+subir aplicação
+
+ng serve —port 3333 -o
