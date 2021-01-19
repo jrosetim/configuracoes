@@ -14,14 +14,6 @@ Criando atalho personalizado
 
 
 ----------------------------------------------------------------------------------------------------------------------------
-
-rm comando para deletar arquivo, não consegue deletar uma pasta ex
-rm home/jrosetim/Documentos/projetos/package.json
-
-rmdir comando para deletar um diretorio Ex:
-rm home/jrosetim/Documentos/projetos
-
-----------------------------------------------------------------------------------------------------------------------------
 ####  Ver lista de programas instalados
 
 > sudo dpkg -l
@@ -67,6 +59,8 @@ dentro da pasta onde se encontrar o arquivo executar um dos camandos abaixo, con
 #### Remover Diretorio
 
 > rm -r nome_do_diretorio
+ou
+> rmdir nome_do_diretorio
 
 #### Remover arquivo
 
