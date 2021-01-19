@@ -1,6 +1,6 @@
 #### Flameshot
 
-sudo apt install flameshot
+> sudo apt install flameshot
 
 Criando atalho personalizado
 
