@@ -1,4 +1,4 @@
-### Flameshot
+#### Flameshot
 
 sudo apt install flameshot
 
@@ -10,7 +10,7 @@ Criando atalho personalizado
 - Finalmente, defina o atalho para **PrtSc** – que irá avisá-lo que a funcionalidade de captura de tela padrão será desativada.
 
 ----------------------------------------------------------------------------------------------------------------------------
-###copyQ 
+#### copyQ 
 
 
 ----------------------------------------------------------------------------------------------------------------------------
@@ -22,60 +22,60 @@ rmdir comando para deletar um diretorio Ex:
 rm home/jrosetim/Documentos/projetos
 
 ----------------------------------------------------------------------------------------------------------------------------
-###Ver lista de programas instalados
+####  Ver lista de programas instalados
 
-**sudo dpkg -l**
+> sudo dpkg -l
 
-### gravá-los em um arquivo de texto(Facilita a visualização)
+#### gravá-los em um arquivo de texto(Facilita a visualização)
 
-cd ~$ sudo dpkg -l > lista.txt
+> cd ~$ sudo dpkg -l > lista.txt
 
 O último comando acima cria uma lista detalhada de todos os programas instalados.
 
 Para visualizá-los, digite:
 
-<b>nano lista.txt</b>
+> nano lista.txt
 
-### remover programa
+#### remover programa
 
-sudo apt-get remove nome_do_programa
+> sudo apt-get remove nome_do_programa
 
-###remover programa e configurações
+#### Remover programa e configurações
 
-**sudo apt-get purge nome_do_programa**
+> sudo apt-get purge nome_do_programa
 
-### Rodar arquivo .sh
+#### Rodar arquivo .sh
 
 entrar na pasta onde se encontra o arquivo e rodar o seguinte comando
 
-**sudo ./nome_do_arquivo.sh**
+> sudo ./nome_do_arquivo.sh
 
 caso de erro de permissão rodar o seguinte comando
 
-**chmod +x filename.sh**
+> chmod +x filename.sh
 
-**sudo ./nome_do_arquivo.sh**
+> sudo ./nome_do_arquivo.sh
 
-### descompactar Arquivo .tar.gz
+#### descompactar Arquivo .tar.gz
 
 dentro da pasta onde se encontrar o arquivo executar um dos camandos abaixo, conferme extensão.
 
-**tar -xvf nomedoarquivo.tar**
+> tar -xvf nomedoarquivo.tar
 
-**tar -vzxf nomedoarquivo.tar.gz**
+> tar -vzxf nomedoarquivo.tar.gz
 
-### Remover Diretorio
+#### Remover Diretorio
 
-**rm -r nome_do_diretorio**
+> rm -r nome_do_diretorio
 
-### Remover arquivo
+#### Remover arquivo
 
-**rm nome_do_arquivo**
+> rm nome_do_arquivo
 
-### Comando para quando estiver com o Linux travado
+#### Comando para quando estiver com o Linux travado
 
-alt+printSc
+> alt+printSc
 
-digitar S para salvar cache
+> digitar S para salvar cache
 
-digitar B para fazer o reboot
+> digitar B para fazer o reboot
