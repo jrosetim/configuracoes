@@ -45,6 +45,8 @@ windows
     clip < ~/.ssh/id_rsa.pub  
 Linux
     xclip -selection clipboard ~/.ssh/id_rsa.pub  
+    ou
+    cat ~/.ssh/id_rsa.pub
 
 Abra o Github no navegador, faça o login e selecione a opção settings em seu menu:
 No menu lateral esquerdo, escolha a opção SSH Keys e depois clique no botão Add SSH key:
