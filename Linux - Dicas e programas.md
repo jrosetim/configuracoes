@@ -73,3 +73,6 @@ ou
 > digitar S para salvar cache
 
 > digitar B para fazer o reboot
+
+#### Criar variavel de Ambiente
+> export var NOME_VARIAVEL=/caminho/completo
