@@ -74,5 +74,23 @@ ou
 
 > digitar B para fazer o reboot
 
-#### Criar variavel de Ambiente
+#### Variavel de Ambiente
 > export var NOME_VARIAVEL=/caminho/completo
+> export NOME_VARIAVEL=/caminho/completo
+> echo NOME_VARIAVEL exibe o valor da variavel de ambiente
+> printenv -> exibe todas as variaveis de ambiente registradas
+
+## Variavel de ambiente para todos os usuario
+
+
+> sudo nano /etc/bash.bashrc
+
+
+## Variavel de ambiente somente para o usuario logado
+
+
+> sudo nano .bashrc
+
+#### Arquivo de configuração PROFILE
+> nano ~/.profile
+> nano ~/.bashrc
