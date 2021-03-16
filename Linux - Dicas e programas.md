@@ -93,4 +93,5 @@ ou
 
 #### Arquivo de configuração PROFILE
 > nano ~/.profile
+
 > nano ~/.bashrc
