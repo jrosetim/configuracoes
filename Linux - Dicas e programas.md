@@ -80,13 +80,13 @@ ou
 > echo NOME_VARIAVEL exibe o valor da variavel de ambiente
 > printenv -> exibe todas as variaveis de ambiente registradas
 
-## Variavel de ambiente para todos os usuario
+###### Variavel de ambiente para todos os usuario
 
 
 > sudo nano /etc/bash.bashrc
 
 
-## Variavel de ambiente somente para o usuario logado
+###### Variavel de ambiente somente para o usuario logado
 
 
 > sudo nano .bashrc
