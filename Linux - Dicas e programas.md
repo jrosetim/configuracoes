@@ -76,8 +76,11 @@ ou
 
 #### Variavel de Ambiente
 > export var NOME_VARIAVEL=/caminho/completo
+
 > export NOME_VARIAVEL=/caminho/completo
+
 > echo NOME_VARIAVEL exibe o valor da variavel de ambiente
+
 > printenv -> exibe todas as variaveis de ambiente registradas
 
 ###### Variavel de ambiente para todos os usuario
