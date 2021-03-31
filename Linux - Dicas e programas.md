@@ -98,3 +98,6 @@ ou
 > nano ~/.profile
 
 > nano ~/.bashrc
+
+Com ZSH instalado
+> nano ~/.zshrc
