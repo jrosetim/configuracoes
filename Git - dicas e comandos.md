@@ -60,7 +60,9 @@ ssh -T git@github.com
 O resultado deve ser:
 
 > The authenticity of host 'github.com (207.97.227.239)' can't be established.  
+
 > \# RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+
 > \# Are you sure you want to continue connecting (yes/no)?
 
 Digite yes e aperte enter.
@@ -116,15 +118,25 @@ caso não funcione tentar a solução abaixo
 
     
     $ git status
+
     > \# No branch branch-b
+
     > \# Você desfez o merge de paths.
+
     > \#   (resolver conflitos e executar "git commit")
+
     > \#
+
     > \# Desfazer merge de paths:
+
     > \#   (use "git add ..." para marcar resoluções)
+
     > \#
+
     > \# ambos modificados:      styleguide.md
+
     > \#
+
     > nenhuma alteração adicionada ao commit (use "git add" e/ou "git commit -a")
     
 
