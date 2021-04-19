@@ -26,9 +26,9 @@ caso seja digitado uma senha, ela será pedida sempre que fizer um pull ou push
 Em seguida, você verá uma mensagem dizendo que deu tudo certo:
 
 > Your identification has been saved in /Users/you/.ssh/id_rsa.  
-> # Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
-> # The key fingerprint is:
-> # 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db seuemail@dominio.com
+> \# Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
+> \# The key fingerprint is:
+> \# 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db seuemail@dominio.com
 
 2- Agora, precisamos adicionar a chave que criamos ao ssh-agent. Primeiro, vamos ativa-lo:
 
@@ -60,8 +60,8 @@ ssh -T git@github.com
 O resultado deve ser:
 
 > The authenticity of host 'github.com (207.97.227.239)' can't be established.  
-> # RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
-> # Are you sure you want to continue connecting (yes/no)?
+> \# RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+> \# Are you sure you want to continue connecting (yes/no)?
 
 Digite yes e aperte enter.
 
@@ -116,20 +116,20 @@ caso não funcione tentar a solução abaixo
 
     
     $ git status
-    > # No branch branch-b
-    > # Você desfez o merge de paths.
-    > #   (resolver conflitos e executar "git commit")
-    > #
-    > # Desfazer merge de paths:
-    > #   (use "git add ..." para marcar resoluções)
-    > #
-    > # ambos modificados:      styleguide.md
-    > #
+    > \# No branch branch-b
+    > \# Você desfez o merge de paths.
+    > \#   (resolver conflitos e executar "git commit")
+    > \#
+    > \# Desfazer merge de paths:
+    > \#   (use "git add ..." para marcar resoluções)
+    > \#
+    > \# ambos modificados:      styleguide.md
+    > \#
     > nenhuma alteração adicionada ao commit (use "git add" e/ou "git commit -a")
     
 
 4. Abra o editor de texto de sua preferência, como o [Atom](https://atom.io/), e navegue até o arquivo que tem conflitos de merge.
-5. Para ver o começo do conflito de merge no arquivo, pesquise o marcador de conflito `<<<<<<<` no arquivo. Quando abrir o arquivo no editor de texto, você verá as alterações do branch HEAD ou base após a linha `<<<<<<< HEAD`. Em seguida, você verá `=======`, que divide suas alterações das alterações no outro branch, seguido por `>>>>>>> BRANCH-NAME`. Neste exemplo, uma pessoa escreveu "open an issue" (abrir um problema) no branch base ou HEAD e outra pessoa escreveu "ask your question in IRC" (faça sua pergunta no IRC) no branch de comparação ou `branch-a`.
+5. Para ver o começo do conflito de merge no arquivo, pesquise o marcador de conflito \`<<<<<<<\` no arquivo. Quando abrir o arquivo no editor de texto, você verá as alterações do branch HEAD ou base após a linha \`<<<<<<< HEAD\`. Em seguida, você verá \`=======\`, que divide suas alterações das alterações no outro branch, seguido por \`>>>>>>> BRANCH-NAME\`. Neste exemplo, uma pessoa escreveu "open an issue" (abrir um problema) no branch base ou HEAD e outra pessoa escreveu "ask your question in IRC" (faça sua pergunta no IRC) no branch de comparação ou \`branch-a\`.
 
     
     If you have questions, please
@@ -140,7 +140,7 @@ caso não funcione tentar a solução abaixo
     >>>>>>> branch-a
     
 
-6. Decida se você deseja manter apenas as alterações do seu branch, manter apenas as alterações do outro branch, ou fazer uma nova alteração, que pode incorporar alterações de ambos os branches. Exclua os marcadores de conflito `<<<<<<<`, `=============` `>>>>>>>` e faça as alterações desejadas no merge final. Neste exemplo, as duas alterações são incorporadas ao merge final:
+6. Decida se você deseja manter apenas as alterações do seu branch, manter apenas as alterações do outro branch, ou fazer uma nova alteração, que pode incorporar alterações de ambos os branches. Exclua os marcadores de conflito \`<<<<<<<\`, \`=============\` \`>>>>>>>\` e faça as alterações desejadas no merge final. Neste exemplo, as duas alterações são incorporadas ao merge final:
 
     If you have questions, please open an issue or ask in our IRC channel if it's more urgent.
     
