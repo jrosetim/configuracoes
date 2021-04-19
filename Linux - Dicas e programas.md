@@ -10,8 +10,19 @@ Criando atalho personalizado
 - Finalmente, defina o atalho para **PrtSc** – que irá avisá-lo que a funcionalidade de captura de tela padrão será desativada.
 
 ----------------------------------------------------------------------------------------------------------------------------
-#### copyQ 
+#### Aplicativos/Programas
+> copyQ 
 
+#### Extensões
+> Arc menu
+
+> Dash to dock
+
+> Panel osd
+
+> Pixel Saver
+
+> User themes
 
 ----------------------------------------------------------------------------------------------------------------------------
 ####  Ver lista de programas instalados
@@ -101,3 +112,11 @@ ou
 
 Com ZSH instalado
 > nano ~/.zshrc
+
+
+
+###### Sempre aparecer o caminho nas pastas UBUNTU
+> Ativar
+gsettings set org.gnome.nautilus.preferences always-use-location-entry  true
+> Desativar
+gsettings set org.gnome.nautilus.preferences always-use-location-entry  false
