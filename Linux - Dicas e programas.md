@@ -57,7 +57,7 @@ caso de erro de permissão rodar o seguinte comando
 
 > chmod +x filename.sh
 
-> sudo ./nome_do_arquivo.sh
+> sudo ./nome_do_arquivo1.sh
 
 #### descompactar Arquivo .tar.gz
 
