@@ -117,6 +117,9 @@ Com ZSH instalado
 
 ###### Sempre aparecer o caminho nas pastas UBUNTU
 > Ativar
+
 gsettings set org.gnome.nautilus.preferences always-use-location-entry  true
+
 > Desativar
+
 gsettings set org.gnome.nautilus.preferences always-use-location-entry  false
