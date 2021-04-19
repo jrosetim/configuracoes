@@ -25,10 +25,10 @@ caso seja digitado uma senha, ela será pedida sempre que fizer um pull ou push
 
 Em seguida, você verá uma mensagem dizendo que deu tudo certo:
 
-Your identification has been saved in /Users/you/.ssh/id_rsa.  
-# Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
-# The key fingerprint is:
-# 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db seuemail@dominio.com
+> Your identification has been saved in /Users/you/.ssh/id_rsa.  
+> # Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
+> # The key fingerprint is:
+> # 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db seuemail@dominio.com
 
 2- Agora, precisamos adicionar a chave que criamos ao ssh-agent. Primeiro, vamos ativa-lo:
 
@@ -59,9 +59,9 @@ Digite o seguinte no Git Bash:
 ssh -T git@github.com  
 O resultado deve ser:
 
-The authenticity of host 'github.com (207.97.227.239)' can't be established.  
-# RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
-# Are you sure you want to continue connecting (yes/no)?
+> The authenticity of host 'github.com (207.97.227.239)' can't be established.  
+> # RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+> # Are you sure you want to continue connecting (yes/no)?
 
 Digite yes e aperte enter.
 
