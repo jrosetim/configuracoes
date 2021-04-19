@@ -27,6 +27,7 @@ React and React Native Development Extensions Pack
 Rainbow Brackets
 Material Icon Theme
 Debugger for Chrome  -> para startar pressionar F5
+Tabnine - autocomplete de varias liguagens
 
 --------------------------------------------------------------------------------------------------------------------------
 
